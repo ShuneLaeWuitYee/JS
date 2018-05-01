@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head><title>Timetables</title>
+<script src="file:///D:/Web/JS/static/jquery-3.3.1.min.js"></script>
+<script src="file:///D:/Web/JS/static/filter.js"></script>
+</head>
+<body>
+<ul>
+	<li>list item 1</li>
+	<li>list item 2</li>
+	<li>list item 3</li>
+	<li>list item 4</li>
+	<li>list item 5</li>
+</ul>
+<ul class="level-1">
+	<li class="item-i">I</li>
+	<li class="item-ii">II
+	<ul class="level-2">
+		<li class="item-a">A</li>
+		<li class="item-b">B
+		<ul class="level-3">
+			<li class="item-1">1</li>
+			<li class="item-2">2</li>
+			<li class="item-3">3</li>
+		</ul>
+		</li>
+		<li class="item-c">C</li>
+	</ul></li>
+	<li class="item-iii">III</li>
+</ul>
+<script type="text/javascript">
+	$('li.item-a').parent().css("background-color","red");
+</script>
+</body>
+</html>
